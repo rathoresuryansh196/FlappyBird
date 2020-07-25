@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Start</title>
+    <style>
+         /* .bg{
+            background-image: url("img1.jpg");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  */
+
+        html, body {
+            margin: 0; padding: 0;
+        }
+        .hero-bkg-animated {
+            background: gray url("img1.jpg") repeat 0 0;
+            width:100%;
+            background-size: cover;
+            box-sizing: border-box;
+            -webkit-animation: slide 10s linear infinite;
+        }
+
+        .hero-bkg-animated h1 {
+            font-family: sans-serif;
+        }
+
+        @-webkit-keyframes slide {
+            from { background-position: 0 0; }
+            to { background-position: -6000px 0; }
+        }
+
+    </style>
+</head>
+<body class="bg hero-bkg-animated">
+    <b><div style="color:#1a0d00;font-size: 120px;text-align: center;font-family:Georgia, 'Times New Roman', Times, serif">FLAPPY BIRD</div></b><br>
+    <img class="im" src="2.gif" style="margin-left: 30%;height: 350px;width:600px;">
+    <br><br>
+    <div style="margin-left: 40%">
+        <a href="index.html"><button style="color: #ffcc99;background-color:#1a0d00;height: 55px;width: 230px;border: #1a0d00;font-size: 30px;font-family: 'Courier New', Courier, monospace">
+            [Start Game]</button></a>
+    </div>
+
+</body>
+</html>

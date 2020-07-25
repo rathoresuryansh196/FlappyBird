@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Play</title>
+
+    <style type="text/css">
+        canvas{
+          border: 1px solid black;
+          background: black;
+        }
+        body{
+            margin:0px;
+            background-color: #00cc44;
+        }
+        .bg{
+            /* background-color:  #79ff4d; */
+            background-image: url("img1.jpg");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <a id="score" style="color:#000000"></a><br>
+    
+    <canvas class="bg" style="border: 5px solid #4d2600 ;"></canvas>
+
+    <iframe src="m2.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio autoplay loop>
+        <source src="m2.mp3" type="audio/mpeg">
+    </audio>
+    
+    <br>
+    <script src="bird.js"></script>
+</body>
+</html>
